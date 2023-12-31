@@ -4,7 +4,6 @@ import { AppService } from './app.service';
 import { ProductsModule } from './products/products.module';
 import { CategoriesModule } from './categories/categories.module';
 import { UsersModule } from './users/users.module';
-import { AuthModule } from './auth/auth.module';
 import { DatabaseModule } from './database/database.module';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import { APP_GUARD } from '@nestjs/core';
@@ -15,7 +14,6 @@ import { LoggerModule } from './logger/logger.module';
     ProductsModule,
     CategoriesModule,
     UsersModule,
-    AuthModule,
     DatabaseModule,
     ThrottlerModule.forRoot([
       {
